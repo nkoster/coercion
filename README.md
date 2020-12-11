@@ -8,4 +8,4 @@ Example in shell:
 ```
 echo -n "console.log('aap')" | node makeUgly.js | node
 ```
-echo -n "console.log('aap')"| node makeUgly.js|node
+

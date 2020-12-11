@@ -38,10 +38,6 @@ map.h = `(${number(17)})[${fromString('toString')}](${number(18)})`
 map.m = `(${number(22)})[${fromString('toString')}](${number(23)})`
 map.C = `((_=>{})[${fromString('constructor')}](${fromString('return escape')})()(${map['\\']}))[${number(2)}]`
 
-const fs = require('fs')
-
-const showCode = code => {
+showCode = function(code) {
     console.log(`(_=>{})[${fromString('constructor')}](${fromString(code)})()`)
-}
-
-showCode(fs.readFileSync(0, 'utf-8'))
+}(require('fs').readFileSync(0, 'utf-8'))

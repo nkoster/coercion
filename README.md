@@ -6,5 +6,5 @@ This is the ["JavaScript Is Weird (EXTREME EDITION)"](https://www.youtube.com/wa
 Example in shell:
 
 ```
-echo -n '(x => console.log(x))(aap)' | node makeUgly.js | node
+echo -n "(x => console.log(x))('aap')" | node makeUgly.js | node
 ```
